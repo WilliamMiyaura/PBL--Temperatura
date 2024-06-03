@@ -63,6 +63,6 @@ Carregue o código no seu ESP32.
 Monitore a saída serial para verificar as mensagens de debug e o estado das conexões.
 
 
-Licença
+# Licença
 Este projeto é licenciado sob a MIT License.
 
