@@ -35,27 +35,27 @@ const char* default_TOPICO_PUBLISH_2 = "/TEF/lamp007/attrs/l"; // Tópico MQTT d
 const char* default_ID_MQTT = "fiware_007"; // ID MQTT
 const int default_D4 = 2; // Pino do LED onboard
 
-#Estrutura do Código
-#Inicialização
+## Estrutura do Código
+# Inicialização
 initSerial(): Inicializa a comunicação serial.
 initWiFi(): Configura a conexão Wi-Fi.
 initMQTT(): Configura o broker MQTT.
-#Configuração do Hardware
+# Configuração do Hardware
 InitOutput(): Configura o pino do LED onboard.
-#Funções Principais
+# Funções Principais
 setup(): Função de configuração inicial.
 loop(): Função principal que roda continuamente.
-#Conexão
+# Conexão
 reconectWiFi(): Verifica e reconecta ao Wi-Fi, se necessário.
 reconnectMQTT(): Verifica e reconecta ao broker MQTT, se necessário.
-#Callbacks
+# Callbacks
 mqtt_callback(char* topic, byte* payload, unsigned int length): Trata mensagens recebidas pelo MQTT.
-#Verificação e Envio de Estados
+# Verificação e Envio de Estados
 VerificaConexoesWiFIEMQTT(): Verifica as conexões Wi-Fi e MQTT.
 EnviaEstadoOutputMQTT(): Envia o estado do LED para o broker MQTT.
-#Leitura de Sensores
+# Leitura de Sensores
 readTemperature(): Lê o valor do sensor de temperatura e envia ao broker MQTT.
-#Uso
+# Uso
 Clone este repositório para sua máquina local.
 Abra o projeto no Arduino IDE.
 Modifique as configurações Wi-Fi e MQTT conforme necessário.
